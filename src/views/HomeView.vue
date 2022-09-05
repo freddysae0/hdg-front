@@ -16,9 +16,9 @@
     </v-carousel>
 
     <v-row>
-      <v-col> <h3>sdsdsd</h3></v-col>
+      <v-col> </v-col>
 
-      <v-col> <h2>asdasfasf</h2> </v-col>
+      <v-col> <img src="../assets/others/fairy1.png" alt="" /> </v-col>
     </v-row>
   </div>
 </template>
