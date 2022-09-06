@@ -1,28 +1,19 @@
 <template>
-  <v-app-bar
-    app
-    src="https://wallpaperaccess.com/full/316911.jpg"
-    dark
-    absolute
-  >
+  <v-app-bar color="black" app dark absolute height="80px">
     <div class="d-flex align-center">
-      <v-img
-        alt="Vuetify Logo"
-        class="shrink mr-2"
-        contain
-        src="../assets/icon.png"
-        transition="scale-transition"
-        width="40"
-      />
+      <router-link to="/"
+        ><v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="../assets/icon.png"
+          transition="scale-transition"
+          width="90"
+      /></router-link>
 
-      <v-img
-        alt="Vuetify Name"
-        class="shrink mt-1 hidden-sm-and-down"
-        contain
-        width="200"
-        min-width="200"
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-      />
+      <router-link class="withOutStyle" to="/"
+        ><h1>Hunting Dragons</h1></router-link
+      >
     </div>
 
     <v-spacer></v-spacer>
@@ -54,4 +45,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+.withOutStyle {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Amatic SC";
+  color: rgb(255, 250, 248);
+}
+</style>
