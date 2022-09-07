@@ -20,12 +20,12 @@
       <v-col>
         <div class="text">
           <p class="width-text">
-            Dragones, una raza igual de poderosa y malvada han conquistado todo
-            su mundo, estableciendo su supremacía y esclavizando toda otra raza
-            y asesinando a quienes se resistían. Todo su mundo fue dominado por
-            ellos y su líder Bahamut un Phase Dragon inicio la incursión a otro
-            mundo abriendo así un portal a otra dimensión y comenzando la
-            conquista y destrucción de una nueva tierra.
+            Dragons, an equally powerful and evil race have conquered all
+            their world, establishing their supremacy and enslaving every other race
+            and killing those who resisted. His whole world was taken over by
+            them and their leader Bahamut a Phase Dragon started the incursion to another
+            world thus opening a portal to another dimension and beginning the
+            conquest and destruction of a new land.
           </p>
         </div>
       </v-col>
@@ -102,12 +102,20 @@
 }
 
 .width-text {
-  max-width: 600px;
+  margin-left: 13%;
+  min-width: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 600px;
   color: white;
 }
 
 .width-text1 {
-  max-width: 600px;
+  min-width: 80%;
+  padding-left: 5%;
+  padding-bottom: 60px;
+
+  width: 600px;
   position: relative;
   right: 30%;
   transform: rotate(4deg);
@@ -116,7 +124,12 @@
 }
 
 .width-text2 {
-  max-width: 600px;
+  margin-left: 13%;
+
+  min-width: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 600px;
   position: relative;
 
   color: rgb(255, 255, 255);
@@ -126,6 +139,7 @@
   min-width: 400px;
 }
 .text-img1 {
+  margin-right: 30%;
   width: 600px;
   min-width: 400px;
 }
@@ -137,6 +151,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 16%;
+  padding-left: 7%;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -145,7 +161,7 @@
 }
 
 p {
-  min-width: 500px;
+  min-width: 600px;
   font-family: "Amatic SC";
 }
 
@@ -176,20 +192,24 @@ h2 {
   top: 0;
   left: 0;
 }
-@media only screen and (max-width: 1037px) {
+
+@media only screen and (max-width: 1113px) {
+  .width-text1 {
+    margin-left: 68%;
+    margin-right: 30%;
+  }
+}
+@media only screen and (max-width: 802px) {
   .text-img1 {
     margin-right: 10%;
     width: 70%;
     min-width: 325px;
   }
   .width-text1 {
-    margin-left: 75%;
-    width: 70%;
-  }
-}
-@media only screen and (max-width: 1160px) {
-  .width-text1 {
+    min-width: 115%;
     margin-right: 30%;
+
+    margin-left: 70%;
   }
 }
 </style>
