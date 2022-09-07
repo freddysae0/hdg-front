@@ -77,11 +77,28 @@
         </div>
       </v-col>
     </v-row>
+
+    <v-row class="racesCards">
+      <h1>Races in The Node:</h1>
+      <RacesCards></RacesCards>
+    </v-row>
   </div>
 </template>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kavivanar&family=Metrophobic&display=swap");
+
+.racesCards {
+  background: linear-gradient(180deg, rgb(53, 45, 45), rgb(0, 0, 0, 0.2));
+  margin-top: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Metrophobic";
+  color: white;
+}
 .container1 {
   /* idéntico a rotateZ(45deg); */
 
@@ -227,10 +244,11 @@ import slide1 from "../assets/slide/slide1.jpg";
 import slide2 from "../assets/slide/slide2.jpg";
 import slide3 from "../assets/slide/slide3.jpg";
 import slide4 from "../assets/slide/slide4.jpg";
+import RacesCards from "@/components/RacesCards.vue";
 export default {
   name: "HomeView",
 
-  components: {},
+  components: { RacesCards },
   data() {
     return {
       colors: [
