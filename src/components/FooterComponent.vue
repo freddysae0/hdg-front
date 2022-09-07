@@ -31,8 +31,7 @@ export default {
   },
   data() {
     return {
-      footerText:
-        "Designed and developed by aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      footerText: "Designed and developed by ",
       author: "Freddy Javier Saez Avila",
 
       icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
