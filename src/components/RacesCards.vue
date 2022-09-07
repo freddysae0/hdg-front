@@ -33,9 +33,11 @@
 
         <v-card-actions class="card-actions">
           <v-divider class="mx-4"></v-divider>
-          <v-btn color="deep-purple lighten-2" text @click="reserve">
-            See more
-          </v-btn>
+          <router-link :to="race.path">
+            <v-btn color="deep-purple lighten-2" text @click="reserve">
+              See more
+            </v-btn>
+          </router-link>
         </v-card-actions>
       </v-card>
     </div>
@@ -63,6 +65,7 @@ export default {
         description:
           "Years ago, humans came to our kingdom since theirs had been invaded by dragons. Some say they still hear them and dream of them. Though no one cares anyway.",
         width: 80,
+        path: "/humans",
       },
       {
         src: vampires,
@@ -70,6 +73,7 @@ export default {
         description:
           "No one knows how or when they came into the world. They have been here forever. They regenerate in combat, and some of their abilities can cause irreparable damage to their enemies. That is why they are feared by all the other races.",
         width: 40,
+        path: "/vampires",
       },
       {
         src: werewolfs,
@@ -77,6 +81,7 @@ export default {
         description:
           "The legend say that that race habits around all the wolrld, They are awesome warriors, But few are able to controle its power. Werewolves are loyal and trustworthy creatures, not as many believe. They are strong and powerful. His abilities increase with the phases of the moon.",
         width: 45,
+        path: "/werewolfs",
       },
       {
         src: fairies,
@@ -84,6 +89,7 @@ export default {
         description:
           "Magical creatures that have used their powers for both good and evil, their power is fully unleashed when they fight as a team. ",
         width: 60,
+        path: "/fairies",
       },
     ],
   }),

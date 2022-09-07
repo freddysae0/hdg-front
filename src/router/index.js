@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import WerewolfsView from '../views/WerewolfsView.vue'
+import FairiesView from '../views/FairiesView.vue'
+import VampiresView from '../views/VampiresView.vue'
+import HumansView from '../views/HumansView.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +13,26 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/humans',
+    name: 'humans',
+    component: HumansView
+  },
+  {
+    path: '/vampires',
+    name: 'vampires',
+    component: VampiresView
+  },
+  {
+    path: '/werewolfs',
+    name: 'werewolfs',
+    component: WerewolfsView
+  },
+  {
+    path: '/fairies',
+    name: 'fairies',
+    component: FairiesView
   },
   {
     path: '/about',
