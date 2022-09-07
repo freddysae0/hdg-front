@@ -20,12 +20,12 @@
       <v-col>
         <div class="text">
           <p class="width-text">
-            Dragons, an equally powerful and evil race have conquered all
-            their world, establishing their supremacy and enslaving every other race
+            Dragons, an equally powerful and evil race have conquered all their
+            world, establishing their supremacy and enslaving every other race
             and killing those who resisted. His whole world was taken over by
-            them and their leader Bahamut a Phase Dragon started the incursion to another
-            world thus opening a portal to another dimension and beginning the
-            conquest and destruction of a new land.
+            them and their leader Bahamut a Phase Dragon started the incursion
+            to another world thus opening a portal to another dimension and
+            beginning the conquest and destruction of a new land.
           </p>
         </div>
       </v-col>
@@ -144,6 +144,7 @@
   min-width: 400px;
 }
 .text-img2 {
+  margin-left: 30px;
   width: 300px;
   min-width: 250px;
 }
@@ -210,6 +211,13 @@ h2 {
     margin-right: 30%;
 
     margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container1 {
+    padding-left: 120px;
+    min-width: 500px;
   }
 }
 </style>
