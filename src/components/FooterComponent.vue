@@ -2,10 +2,12 @@
   <v-footer app color="black" dark padless absolute z-index="4">
     <v-card flat tile class="lighten-1 white--text text-center fullWidth">
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
+        <v-btn v-for="icon in social" :key="icon" class="mx-4 white--text" icon>
+          <a :href="icon.src"
+            ><v-icon color="white" size="24px">
+              {{ icon.icon }}
+            </v-icon></a
+          >
         </v-btn>
       </v-card-text>
 
@@ -34,7 +36,24 @@ export default {
       footerText: "Designed and developed by ",
       author: "Freddy Javier Saez Avila",
 
-      icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+      social: [
+        {
+          src: "https://www.facebook.com/freddy.saez.18",
+          icon: "mdi-facebook",
+        },
+        {
+          src: "https://twitter.com/freddy_awa",
+          icon: "mdi-twitter",
+        },
+        {
+          src: "https://www.linkedin.com/in/freddy-saez-03b261242/",
+          icon: "mdi-linkedin",
+        },
+        {
+          src: "https://www.instagram.com/photographer_verum/",
+          icon: "mdi-instagram",
+        },
+      ],
     };
   },
   methods: {},
