@@ -2,7 +2,7 @@
   <v-app>
     <NavbarComponent></NavbarComponent>
     <v-main class="darken-wallpaper">
-      <v-container fluid class="pl-0 pr-0 pt-0">
+      <v-container fluid class="pl-0 pr-0 pt-0 pb-0">
         <router-view />
 
         <div class="area pl-0 pr-0 pt-0">
