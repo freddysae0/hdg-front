@@ -71,19 +71,22 @@ h2 {
   color: white;
   text-align: center;
   font-family: "Amatic SC";
-  font-size: 20rem !important;
+  font-size: 15rem !important;
 }
 
 h3 {
   color: white;
   text-align: center;
   font-family: "Amatic SC";
-  font-size: 1rem !important;
+  font-size: 5rem !important;
 }
 
-@media screen and (min-width: 700px) {
-  h3 {
+@media screen and (max-width: 700px) {
+  h2 {
     font-size: 5rem !important;
+  }
+  h3 {
+    font-size: 2rem !important;
   }
 }
 
